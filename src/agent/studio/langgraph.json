@@ -1,11 +1,3 @@
-{
-  "dockerfile_lines": [],
-  "graphs": {
-    "agent": "./react.py:agent"
-  },
-  "env": "./.env",
-  "python_version": "3.12",
-  "dependencies": [
-    "."
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d210401c3c5392648a46f487222bcc7676bd4cc3fb3f60370a763ee2a20f3d5a
+size 159
