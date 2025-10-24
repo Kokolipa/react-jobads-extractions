@@ -1,0 +1,219 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">ambassadorship</span> <span class="lx-label" style="background-color:#C8E6C9;">ambition_focus_drive_enthusiasm_professionalism</span> <span class="lx-label" style="background-color:#FEF0C3;">client_engagement</span> <span class="lx-label" style="background-color:#F9DEDC;">drive_and_enthusiasm</span> <span class="lx-label" style="background-color:#FFDDBE;">recruitment_management</span> <span class="lx-label" style="background-color:#EADDFF;">relationship_building</span> <span class="lx-label" style="background-color:#C4E9E4;">resource Coordination</span> <span class="lx-label" style="background-color:#FCE4EC;">solution_finding</span> <span class="lx-label" style="background-color:#E8EAED;">strategy_development</span> <span class="lx-label" style="background-color:#DDE8E8;">supportive_culture</span> <span class="lx-label" style="background-color:#D2E3FC;">team_building</span> <span class="lx-label" style="background-color:#C8E6C9;">work_life_balance</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        Are you looking to join a thriving business that will reward your hard work whilst you make a difference to Children’s lives?
+The Role:
+We are looking for someone to focus purely on recruiting Permanent staff in the Early Childhood Educaton Sector. The role will include:
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#EADDFF;">Building relationships with</span> range of existing and prospective clients
+<span class="lx-highlight" data-idx="1" style="background-color:#FCE4EC;">Identify</span> their issues and help provide the solution
+<span class="lx-highlight" data-idx="2" style="background-color:#FEF0C3;">Attending client visits</span> and understanding client requirements
+<span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">Representing</span> Pulse Child Care Crew as an ambassador at career fairs and other external events
+<span class="lx-highlight" data-idx="4" style="background-color:#FFDDBE;">Managing recruitment processes to</span> deliver monthly targets
+<span class="lx-highlight" data-idx="5" style="background-color:#E8EAED;">Developing and executing</span> your own candidate development strategy
+<span class="lx-highlight" data-idx="6" style="background-color:#C4E9E4;">Coordinating resources to ensure</span> all vacancies are properly worked
+
+The Benefits
+Competitive salary and commission structure, with uncapped earning potential.
+Have your experience and successes recognised as a key player of the business. Everyone is heard and encouraged to offer opinions.
+Regular Incentives including all-expenses trips and <span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;">team building days out</span>.
+Financial rewards and celebratory meals, all of which you are eligible for from Day 1.
+We have a Quarterly Lunch Clubs with all-expenses paid Friday afternoon off to a posh restaurant.
+Be part of a <span class="lx-highlight" data-idx="8" style="background-color:#DDE8E8;">socially active and supportive team</span> with a great balance of <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">competitive hard work and plenty of fun</span>.
+Investors in People with a consistent focus on support through our established career development pathway, providing you a clear pathway and training to reach your potential.
+International development and travel opportunities with clients, candidates and offices around the world.
+Recognised as one of the Best Companies to Work For with support from Independent Clinical Services, one of the largest healthcare staffing providers in the UK and beyond.
+
+You will need:
+You will have experience within Early Education and a passion for business development.
+To <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">demonstrate ambition, focus, drive, enthusiasm and professionalism</span>.
+<span class="lx-highlight" data-idx="11" style="background-color:#F9DEDC;">Desire to become an expert in your area</span> - we pride ourselves on our specialist knowledge.
+
+Be part of a fast-growing business in an exciting industry
+Pulse Child Care Crew is a well-established and leading provider of Early Childhood Professionals to Child Care Centres and Out of School Hours Care throughout Sydney. We support our clients by placing experienced and compliant Early Childhood Teachers, Diploma and Certificate III trained educators as well as Cooks and OSH assistants into permanent and casual roles. Our specialist team of consultants come from various early education backgrounds.
+
+To find out more about this exciting opportunity please call Mandy Sheen on 02 9965 9444 for a confidential chat or email your resume to mandy@childcarecrew.com.au
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="11" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/12</span> |
+          Pos <span id="posInfo">[272-299]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "relationship_building", "text": "Building relationships with existing and prospective clients", "color": "#EADDFF", "startPos": 272, "endPos": 299, "beforeText": "es?\nThe Role:\nWe are looking for someone to focus purely on recruiting Permanent staff in the Early Childhood Educaton Sector. The role will include:\n", "extractionText": "Building relationships with", "afterText": " range of existing and prospective clients\nIdentify their issues and help provide the solution\nAttending client visits and understanding client requir", "attributesHtml": "<div><strong>class:</strong> relationship_building</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 1, "class": "solution_finding", "text": "Identify client issues and help provide solutions", "color": "#FCE4EC", "startPos": 342, "endPos": 350, "beforeText": " Permanent staff in the Early Childhood Educaton Sector. The role will include:\nBuilding relationships with range of existing and prospective clients\n", "extractionText": "Identify", "afterText": " their issues and help provide the solution\nAttending client visits and understanding client requirements\nRepresenting Pulse Child Care Crew as an amb", "attributesHtml": "<div><strong>class:</strong> solution_finding</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 2, "class": "client_engagement", "text": "Attending client visits to understand requirements", "color": "#FEF0C3", "startPos": 394, "endPos": 417, "beforeText": "tor. The role will include:\nBuilding relationships with range of existing and prospective clients\nIdentify their issues and help provide the solution\n", "extractionText": "Attending client visits", "afterText": " and understanding client requirements\nRepresenting Pulse Child Care Crew as an ambassador at career fairs and other external events\nManaging recruitm", "attributesHtml": "<div><strong>class:</strong> client_engagement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 3, "class": "ambassadorship", "text": "Representing the company as an ambassador at external events", "color": "#D2E3FC", "startPos": 456, "endPos": 468, "beforeText": "of existing and prospective clients\nIdentify their issues and help provide the solution\nAttending client visits and understanding client requirements\n", "extractionText": "Representing", "afterText": " Pulse Child Care Crew as an ambassador at career fairs and other external events\nManaging recruitment processes to deliver monthly targets\nDeveloping", "attributesHtml": "<div><strong>class:</strong> ambassadorship</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 4, "class": "recruitment_management", "text": "Managing recruitment processes to meet targets", "color": "#FFDDBE", "startPos": 550, "endPos": 583, "beforeText": "ing client visits and understanding client requirements\nRepresenting Pulse Child Care Crew as an ambassador at career fairs and other external events\n", "extractionText": "Managing recruitment processes to", "afterText": " deliver monthly targets\nDeveloping and executing your own candidate development strategy\nCoordinating resources to ensure all vacancies are properly ", "attributesHtml": "<div><strong>class:</strong> recruitment_management</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 5, "class": "strategy_development", "text": "Developing and executing a candidate development strategy", "color": "#E8EAED", "startPos": 608, "endPos": 632, "beforeText": "presenting Pulse Child Care Crew as an ambassador at career fairs and other external events\nManaging recruitment processes to deliver monthly targets\n", "extractionText": "Developing and executing", "afterText": " your own candidate development strategy\nCoordinating resources to ensure all vacancies are properly worked\n\nThe Benefits\nCompetitive salary and commi", "attributesHtml": "<div><strong>class:</strong> strategy_development</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 6, "class": "resource Coordination", "text": "Coordinating resources to ensure vacancy fulfillment", "color": "#C4E9E4", "startPos": 673, "endPos": 705, "beforeText": " and other external events\nManaging recruitment processes to deliver monthly targets\nDeveloping and executing your own candidate development strategy\n", "extractionText": "Coordinating resources to ensure", "afterText": " all vacancies are properly worked\n\nThe Benefits\nCompetitive salary and commission structure, with uncapped earning potential.\nHave your experience an", "attributesHtml": "<div><strong>class:</strong> resource Coordination</div><div><strong>attributes:</strong> {}</div>"}, {"index": 7, "class": "team_building", "text": "Team building days out, all-expenses paid trips, quarterly lunch clubs with Friday afternoons off to posh restaurants", "color": "#D2E3FC", "startPos": 1015, "endPos": 1037, "beforeText": "s recognised as a key player of the business. Everyone is heard and encouraged to offer opinions.\nRegular Incentives including all-expenses trips and ", "extractionText": "team building days out", "afterText": ".\nFinancial rewards and celebratory meals, all of which you are eligible for from Day 1.\nWe have a Quarterly Lunch Clubs with all-expenses paid Friday", "attributesHtml": "<div><strong>class:</strong> team_building</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 8, "class": "supportive_culture", "text": "Socially active and supportive team environment", "color": "#DDE8E8", "startPos": 1237, "endPos": 1272, "beforeText": "which you are eligible for from Day 1.\nWe have a Quarterly Lunch Clubs with all-expenses paid Friday afternoon off to a posh restaurant.\nBe part of a ", "extractionText": "socially active and supportive team", "afterText": " with a great balance of competitive hard work and plenty of fun.\nInvestors in People with a consistent focus on support through our established caree", "attributesHtml": "<div><strong>class:</strong> supportive_culture</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 9, "class": "work_life_balance", "text": "Competitive hard work and plenty of fun, international travel opportunities", "color": "#C8E6C9", "startPos": 1297, "endPos": 1336, "beforeText": "unch Clubs with all-expenses paid Friday afternoon off to a posh restaurant.\nBe part of a socially active and supportive team with a great balance of ", "extractionText": "competitive hard work and plenty of fun", "afterText": ".\nInvestors in People with a consistent focus on support through our established career development pathway, providing you a clear pathway and trainin", "attributesHtml": "<div><strong>class:</strong> work_life_balance</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 10, "class": "ambition_focus_drive_enthusiasm_professionalism", "text": "Demonstrate ambition, focus, drive, enthusiasm and professionalism", "color": "#C8E6C9", "startPos": 1898, "endPos": 1964, "beforeText": "e staffing providers in the UK and beyond.\n\nYou will need:\nYou will have experience within Early Education and a passion for business development.\nTo ", "extractionText": "demonstrate ambition, focus, drive, enthusiasm and professionalism", "afterText": ".\nDesire to become an expert in your area - we pride ourselves on our specialist knowledge.\n\nBe part of a fast-growing business in an exciting industr", "attributesHtml": "<div><strong>class:</strong> ambition_focus_drive_enthusiasm_professionalism</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}, {"index": 11, "class": "drive_and_enthusiasm", "text": "Desire to become an expert in your area", "color": "#F9DEDC", "startPos": 1966, "endPos": 2005, "beforeText": "have experience within Early Education and a passion for business development.\nTo demonstrate ambition, focus, drive, enthusiasm and professionalism.\n", "extractionText": "Desire to become an expert in your area", "afterText": " - we pride ourselves on our specialist knowledge.\n\nBe part of a fast-growing business in an exciting industry\nPulse Child Care Crew is a well-establi", "attributesHtml": "<div><strong>class:</strong> drive_and_enthusiasm</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">skill_type</span>: <span class=\"lx-attr-value\">soft</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>

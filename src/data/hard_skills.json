@@ -1,0 +1,77 @@
+[
+    {
+        "text": "The candidate must have 5+ years of experience developing high-performance applications using **Node.js** and proficiency with modern **CI/CD pipelines**.",
+        "extractions": [
+            {
+                "extraction_text": "Node.js",
+                "extraction_class": "Node.js Development",
+                "attributes": {"skill_type": "hard"}
+            },
+            {
+                "extraction_text": "CI/CD pipelines",
+                "extraction_class": "DevOps CI/CD",
+                "attributes": {"skill_type": "hard"}
+            }
+        ]
+    },
+    {
+        "text": "Required to build complex financial models and conduct variance analysis. Expert-level knowledge of **VLOOKUP and Pivot Tables in Excel** is essential.",
+        "extractions": [
+            {
+                "extraction_text": "build complex financial models",
+                "extraction_class": "Financial Modeling",
+                "attributes": {"skill_type": "hard"}
+            },
+            {
+                "extraction_text": "VLOOKUP and Pivot Tables in Excel",
+                "extraction_class": "Advanced Excel",
+                "attributes": {"skill_type": "hard"}
+            }
+        ]
+    },
+    {
+        "text": "The designer will create wireframes and high-fidelity mockups for new features. Must be proficient in **Figma** and follow **Atomic Design principles**.",
+        "extractions": [
+            {
+                "extraction_text": "Figma",
+                "extraction_class": "UI/UX Design Software",
+                "attributes": {"skill_type": "hard"}
+            },
+            {
+                "extraction_text": "Atomic Design principles",
+                "extraction_class": "Design Systems",
+                "attributes": {"skill_type": "hard"}
+            }
+        ]
+    },
+    {
+        "text": "Oversee installation and troubleshooting of industrial machinery, demonstrating certification in **PLC programming (Siemens S7)** and schematic interpretation.",
+        "extractions": [
+            {
+                "extraction_text": "installation and troubleshooting of industrial machinery",
+                "extraction_class": "Industrial Maintenance",
+                "attributes": {"skill_type": "hard"}
+            },
+            {
+                "extraction_text": "PLC programming (Siemens S7)",
+                "extraction_class": "PLC Programming",
+                "attributes": {"skill_type": "hard"}
+            }
+        ]
+    },
+    {
+        "text": "Responsible for managing large-scale datasets. Experience with distributed processing frameworks like **Apache Spark** and writing complex queries in **PostgreSQL** is mandatory.",
+        "extractions": [
+            {
+                "extraction_text": "Apache Spark",
+                "extraction_class": "Big Data Frameworks",
+                "attributes": {"skill_type": "hard"}
+            },
+            {
+                "extraction_text": "PostgreSQL",
+                "extraction_class": "SQL Database Management",
+                "attributes": {"skill_type": "hard"}
+            }
+        ]
+    }
+]

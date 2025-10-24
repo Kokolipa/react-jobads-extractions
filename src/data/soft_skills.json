@@ -1,0 +1,52 @@
+[
+    {
+        "text": "Must possess exceptional written and verbal communication skills to present complex technical roadmaps to executive leadership.",
+        "extractions": [
+            {
+                "extraction_text": "Present technical roadmaps to executive leadership",
+                "extraction_class": "communication",
+                "attributes": {"skill_type": "soft"}
+            }
+        ]
+    },
+    {
+        "text": "Ability to lead and mentor a distributed team of engineers, fostering a culture of ownership and high performance.",
+        "extractions": [
+            {
+                "extraction_text": "Lead and mentor a distributed team",
+                "extraction_class": "leadership",
+                "attributes": {"skill_type": "soft"}
+            }
+        ]
+    },
+    {
+        "text": "Required to analyze user feedback and performance metrics to diagnose and resolve application bottlenecks and design long-term solutions.",
+        "extractions": [
+            {
+                "extraction_text": "Analyze metrics to diagnose and resolve bottlenecks",
+                "extraction_class": "problem_solving",
+                "attributes": {"skill_type": "soft"}
+            }
+        ]
+    },
+    {
+        "text": "Collaborate daily with Product, Design, and QA teams in an Agile environment to align feature development and delivery schedules.",
+        "extractions": [
+            {
+                "extraction_text": "Collaborate daily with cross-functional teams in Agile",
+                "extraction_class": "teamwork_collaboration",
+                "attributes": {"skill_type": "soft"}
+            }
+        ]
+    },
+    {
+        "text": "Demonstrated ability to pivot quickly and adjust strategy in response to changing market conditions and unforeseen regulatory challenges.",
+        "extractions": [
+            {
+                "extraction_text": "Pivot strategy in response to changing conditions",
+                "extraction_class": "adaptability",
+                "attributes": {"skill_type": "soft"}
+            }
+        ]
+    }
+]

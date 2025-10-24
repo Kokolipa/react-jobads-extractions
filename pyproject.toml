@@ -1,0 +1,43 @@
+[project]
+name = "seek-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "ipykernel>=6.30.1",
+    "langextract>=1.0.9",
+    "matplotlib>=3.10.6",
+    "numpy>=2.3.3",
+    "pandas>=2.3.3",
+    "rich>=14.1.0",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "spacy>=3.8.7",
+    "transformers>=4.56.2",
+    "types-tqdm>=4.67.0.20250809",
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+    "jupyter>=1.1.1",
+    "ipython>=9.6.0",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.30",
+    "langchain-core>=0.3.78",
+    "langchain-ollama>=0.3.10",
+    "langgraph>=0.6.8",
+    "langgraph-checkpoint>=2.1.1",
+    "langgraph-checkpoint-sqlite>=2.0.11",
+    "langgraph-prebuilt>=0.6.4",
+    "langgraph-sdk>=0.2.9",
+    "langsmith>=0.4.32",
+    "sentence-transformers>=5.1.1",
+    "evaluate>=0.4.6",
+    "pydantic>=2.11.9",
+    "pydantic-core>=2.33.2",
+    "pydantic-settings>=2.11.0",
+    "python-dotenv>=1.1.1",
+    "trustcall>=0.0.39",
+    "jinja2>=3.1.6",
+]
